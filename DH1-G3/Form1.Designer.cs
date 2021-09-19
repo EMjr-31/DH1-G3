@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDui = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNIT = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDui = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnGenerar = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbCuenta = new System.Windows.Forms.ComboBox();
-            this.cbSucursal = new System.Windows.Forms.ComboBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.cbSucursal = new System.Windows.Forms.ComboBox();
+            this.cbCuenta = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnGenerar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,32 +75,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
             // 
-            // label1
+            // txtNIT
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DUI:";
+            this.txtNIT.Location = new System.Drawing.Point(85, 129);
+            this.txtNIT.Name = "txtNIT";
+            this.txtNIT.Size = new System.Drawing.Size(150, 20);
+            this.txtNIT.TabIndex = 7;
             // 
-            // label2
+            // txtApellido
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre: ";
+            this.txtApellido.Location = new System.Drawing.Point(85, 95);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(150, 20);
+            this.txtApellido.TabIndex = 6;
             // 
-            // label3
+            // txtNombre
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellido:  ";
+            this.txtNombre.Location = new System.Drawing.Point(85, 64);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(150, 20);
+            this.txtNombre.TabIndex = 5;
+            // 
+            // txtDui
+            // 
+            this.txtDui.Location = new System.Drawing.Point(85, 34);
+            this.txtDui.Name = "txtDui";
+            this.txtDui.Size = new System.Drawing.Size(150, 20);
+            this.txtDui.TabIndex = 4;
             // 
             // label4
             // 
@@ -111,33 +112,32 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "NIT: ";
             // 
-            // txtDui
+            // label3
             // 
-            this.txtDui.Location = new System.Drawing.Point(85, 34);
-            this.txtDui.Name = "txtDui";
-            this.txtDui.Size = new System.Drawing.Size(150, 20);
-            this.txtDui.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Apellido:  ";
             // 
-            // txtNombre
+            // label2
             // 
-            this.txtNombre.Location = new System.Drawing.Point(85, 64);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(150, 20);
-            this.txtNombre.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre: ";
             // 
-            // txtApellido
+            // label1
             // 
-            this.txtApellido.Location = new System.Drawing.Point(85, 95);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(150, 20);
-            this.txtApellido.TabIndex = 6;
-            // 
-            // txtNIT
-            // 
-            this.txtNIT.Location = new System.Drawing.Point(85, 129);
-            this.txtNIT.Name = "txtNIT";
-            this.txtNIT.Size = new System.Drawing.Size(150, 20);
-            this.txtNIT.TabIndex = 7;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DUI:";
             // 
             // groupBox2
             // 
@@ -156,32 +156,35 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de la Cuenta";
             // 
-            // label5
+            // txtMonto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tipo de Cuenta";
+            this.txtMonto.Location = new System.Drawing.Point(142, 88);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(121, 20);
+            this.txtMonto.TabIndex = 7;
             // 
-            // label6
+            // txtCodigo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Monto: ";
+            this.txtCodigo.Location = new System.Drawing.Point(142, 56);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigo.TabIndex = 6;
             // 
-            // btnGenerar
+            // cbSucursal
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(26, 53);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(90, 23);
-            this.btnGenerar.TabIndex = 2;
-            this.btnGenerar.Text = "Generar Codigo ";
-            this.btnGenerar.UseVisualStyleBackColor = true;
+            this.cbSucursal.FormattingEnabled = true;
+            this.cbSucursal.Location = new System.Drawing.Point(142, 125);
+            this.cbSucursal.Name = "cbSucursal";
+            this.cbSucursal.Size = new System.Drawing.Size(121, 21);
+            this.cbSucursal.TabIndex = 5;
+            // 
+            // cbCuenta
+            // 
+            this.cbCuenta.FormattingEnabled = true;
+            this.cbCuenta.Location = new System.Drawing.Point(142, 22);
+            this.cbCuenta.Name = "cbCuenta";
+            this.cbCuenta.Size = new System.Drawing.Size(121, 21);
+            this.cbCuenta.TabIndex = 4;
             // 
             // label7
             // 
@@ -192,35 +195,32 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Sucursal ";
             // 
-            // cbCuenta
+            // btnGenerar
             // 
-            this.cbCuenta.FormattingEnabled = true;
-            this.cbCuenta.Location = new System.Drawing.Point(142, 22);
-            this.cbCuenta.Name = "cbCuenta";
-            this.cbCuenta.Size = new System.Drawing.Size(121, 21);
-            this.cbCuenta.TabIndex = 4;
+            this.btnGenerar.Location = new System.Drawing.Point(26, 53);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(90, 23);
+            this.btnGenerar.TabIndex = 2;
+            this.btnGenerar.Text = "Generar Codigo ";
+            this.btnGenerar.UseVisualStyleBackColor = true;
             // 
-            // cbSucursal
+            // label6
             // 
-            this.cbSucursal.FormattingEnabled = true;
-            this.cbSucursal.Location = new System.Drawing.Point(142, 125);
-            this.cbSucursal.Name = "cbSucursal";
-            this.cbSucursal.Size = new System.Drawing.Size(121, 21);
-            this.cbSucursal.TabIndex = 5;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 91);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Monto: ";
             // 
-            // txtCodigo
+            // label5
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(142, 56);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
-            this.txtCodigo.TabIndex = 6;
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Location = new System.Drawing.Point(142, 88);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(121, 20);
-            this.txtMonto.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Tipo de Cuenta";
             // 
             // groupBox3
             // 
@@ -235,6 +235,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Reguistro de Clientes";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnBuscar.Location = new System.Drawing.Point(526, 15);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(103, 23);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar Cliente";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,14 +256,17 @@
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dgvClientes
             // 
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(25, 287);
             this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClientes.Size = new System.Drawing.Size(616, 216);
             this.dgvClientes.TabIndex = 3;
+            this.dgvClientes.DoubleClick += new System.EventHandler(this.dgvClientes_DoubleClick);
             // 
             // groupBox4
             // 
@@ -273,17 +287,7 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnBuscar.Location = new System.Drawing.Point(526, 15);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(103, 23);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.Text = "Buscar Cliente";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form1
             // 
@@ -296,6 +300,7 @@
             this.Controls.Add(this.groupBox4);
             this.Name = "Form1";
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
