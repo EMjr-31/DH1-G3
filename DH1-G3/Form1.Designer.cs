@@ -203,6 +203,7 @@
             this.btnGenerar.TabIndex = 2;
             this.btnGenerar.Text = "Generar Codigo ";
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // label6
             // 

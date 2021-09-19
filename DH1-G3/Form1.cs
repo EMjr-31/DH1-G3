@@ -99,5 +99,44 @@ namespace DH1_G3
         {
             Application.Exit();
         }
+        ///Metodo de codigo
+        public string cod ()
+        {
+            string codi, iniciales, numeros;
+            int num;
+            if (cbCuenta.Text == "Ahorro") {
+                iniciales = "CA";
+            }
+            if (cbCuenta.Text == "Corriente")
+            {
+                iniciales = "CC";
+            }
+            else {
+                iniciales = "CP";
+            }
+            num = Clientes.Count()+1;
+            if (num > 9)
+            {
+                if (num > 99)
+                {
+                    numeros = "0" + num.ToString();
+                }
+                else
+                {
+                    numeros = "00" + num.ToString();
+                }
+            }
+            else {
+                numeros = "000" + num.ToString();
+            }
+            codi =iniciales+"-"+numeros;
+
+            return codi;
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Text = cod();
+        }
     }
 }
