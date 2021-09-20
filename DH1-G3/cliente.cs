@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DH1_G3
 {
-    class cliente
+    public class cliente
     {
         string nombre;
         string apellido;

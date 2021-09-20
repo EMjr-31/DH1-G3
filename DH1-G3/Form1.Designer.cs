@@ -246,6 +246,7 @@
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar Cliente";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnGuardar
             // 

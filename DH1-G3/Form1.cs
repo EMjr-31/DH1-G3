@@ -25,7 +25,7 @@ namespace DH1_G3
             cbCuenta.Items.Clear();
             cbCuenta.Items.Add("Ahorro");
             cbCuenta.Items.Add("Corriente");
-            cbCuenta.Items.Add("Plazos");
+            cbCuenta.Items.Add("Plazo");
 
             ///Sucursales 
             cbSucursal.Items.Clear();
@@ -104,16 +104,21 @@ namespace DH1_G3
         {
             string codi, iniciales, numeros;
             int num;
-            if (cbCuenta.Text == "Ahorro") {
+            if (cbCuenta.Text == "Ahorro")
+            {
                 iniciales = "CA";
             }
-            if (cbCuenta.Text == "Corriente")
-            {
-                iniciales = "CC";
-            }
             else {
-                iniciales = "CP";
+                if (cbCuenta.Text == "Corriente")
+                {
+                    iniciales = "CC";
+                }
+                else
+                {
+                    iniciales = "CP";
+                }
             }
+            
             num = Clientes.Count()+1;
             if (num > 9)
             {
@@ -137,6 +142,13 @@ namespace DH1_G3
         private void btnGenerar_Click(object sender, EventArgs e)
         {
             txtCodigo.Text = cod();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Busqueda form2 = new Busqueda();
+            form2.ClienteRecibe = Clientes;
+            form2.Show();
         }
     }
 }
